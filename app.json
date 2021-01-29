@@ -5,7 +5,7 @@
      "version": "1.1"
      },
     "plan": "heroku-postgresql"
-  }
+  },
     
  ],
 "dicription" : " python based telegram bot with exrta features and well maintaind by team UNITED",
@@ -137,4 +137,4 @@
    "repository": "https://github.com/SZyruz-ramu/Aleena",
    "success_url": "https://telegram.dog/aleena",
    "logo": "https://telegra.ph/file/e3685fe4b49df44a374a8.jpg"
-}
+},
