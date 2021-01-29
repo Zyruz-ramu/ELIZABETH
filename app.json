@@ -4,6 +4,7 @@
   "logo": "https://telegra.ph/file/bd72857322159140bec6b.jpg",
   "keywords": ["telegram-bot"],
   "repository": "https://github.com/p-rinc-e/elizabeth.git",
+},
   "env": {
     "TL_APP_ID": {
       "description": "Get this value from my.telegram.org! Please do not steal",
