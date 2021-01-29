@@ -6,13 +6,6 @@
       }
     },
   ],
-  
-  "name": "Elizabeth_TgBot",
-  "description": "A Powerful Telegram Bot written in PTB and Telethon",
-  "logo": "https://telegra.ph/file/bd72857322159140bec6b.jpg",
-  "keywords": ["telegram-bot"],
-  "repository": "https://github.com/p-rinc-e/elizabeth.git",
-},
 
   "env": {
     "TL_APP_ID": {
@@ -166,4 +159,10 @@
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     }
   ],
+},
+  "name": "Elizabeth_TgBot",
+  "description": "A Powerful Telegram Bot written in PTB and Telethon",
+  "logo": "https://telegra.ph/file/bd72857322159140bec6b.jpg",
+  "keywords": ["telegram-bot"],
+  "repository": "https://github.com/p-rinc-e/elizabeth.git",
 },
