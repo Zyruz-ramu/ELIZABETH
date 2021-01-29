@@ -1,163 +1,131 @@
- "addons": [
-    {
-      "plan": "heroku-postgresql",
-      "options": {
-        "version": "12"
-      },
-    },
-  ],
-
-  "env": {
-    "TL_APP_ID": {
-      "description": "Get this value from my.telegram.org! Please do not steal",
-      "value": "",
-      "required": true
-    },
-    "TL_HASH": {
-      "description": "Get this value from my.telegram.org! Please do not steal",
-      "value": "",
-      "required": true
-    },
-    "TOKEN": {
-      "description": "Get your bot token from @botfather",
-      "value": "",
-      "required": true
-    },
-    "SQLALCHEMY_DATABASE_URI": {
-      "description": "No need change",
-      "required": false,
-      "value": "sqldbtype://username:pw@hostname:port/db_name"
-    },
-    "ENV": {
-     "description": "Set this to ANYTHING..",
-     "value": "ANYTHING"
-    },
-    "API_OPENWEATHER": {
-      "description": "Get your own APPID from https://api.openweathermap.org/data/2.5/weather",
-      "value": "",
-      "required": false
-    },
-    "IBM_WATSON_CRED_URL": {
-      "description": "This is required for the speech to text module. Get your USERNAME from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
-      "required": false
-    },
-    "IBM_WATSON_CRED_PASSWORD": {
-      "description": "This is required for the speech to text module. Get your PASSWORD from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
-      "required": false
-    },
-    "GBAN_LOGS": {
-      "description": "The group id for logging all gbans.. ⚠️ Remember:- You must add your bot to that group..",
-      "value": "",
-      "required": true
-    },
-    "DONATION_LINK": {
-      "description": "Enter Donation link..",
-      "required": false,
-      "value": "https://t.me/P_RINC_E"
-    },
-    "SUDO_USERS": {
-      "description": "List of user id's who will have SUDO rights in your bot(they can't be banned/warned etc. by the bot)",
-      "value": "1398881120",
-      "required": false
-    },
-    "SUPPORT_USERS": {
-      "description": "Support users Id's.",
-      "required": false,
-      "value": "1398881120"
-   },
-   "WHITELIST_USERS": {
-     "description": "Whitelist user Id's.",
-     "required": false,
-     "value": "1398881120"
-   },
-   "DEV_USERS": {
-     "description": "Developers id",
-     "required": false,
-     "value": "1398881120"
-   },
-   "WEBHOOK": {
-      "description": "Nothing here.",
-      "required": false,
-      "value": ""
-    },
-    "PORT": {
-      "description": "No need change.",
-      "required": false,
-      "value": ""
-    },
-    "YOUTUBE_API_KEY": {
-      "description": "Place your YouTube API Key here",
-      "value": "",
-      "required": false
-    },
-    "OWNER_ID": {
-      "description": "An integer of consisting of your ID",
-      "value": "",
-      "required": true
-    },
-    "TEMP_DOWNLOAD_DIRECTORY": {
-      "description": "Do not edit this.",
-      "value": "./",
-      "required": false
-    },
-    "OWNER_USERNAME": {
-      "description": "Your username",
-      "value": "",
-      "required": true
-    },
-    "DEL_CMDS": {
-      "description": "Delete devs cmds from users",
-      "value": "False",
-      "required": false
-    },
-    "CUSTOM_CMD": {
-      "description": "Custom command handler..",
-      "required": false,
-      "value": ""
-    },
-    "URL": {
-      "description": "The Heroku App URL :- edit this to your app name https://your app name.herokuapp.com/",
-      "required": false,
-      "value": ""
-    },
-    "MESSAGE_DUMP": {
-      "description": "A chat for logging bot events.. ⚠️ Remember :- You must add your bot to that group.. Otherwise telethon modules never works.. Eg songs etc💌",
-      "value": "",
-      "required": true
-    },
-    "TIME_API_KEY": {
-      "description": "Required for timezone information",
-      "value": "",
-      "required": false
-    },
-    "CASH_API_KEY": {
-      "description": "Required for currency converter",
-      "value": "",
-      "required": false
-    },
-    "WALL_API": {
-      "description": "Get one from https://wall.alphacoders.com/api.php",
-      "value": "",
-      "required": false
-    },   
+{ 
+  "addons": [ 
+  { 
+    "options": {
+     "version": "1.1"
+     },
+    "plan": "heroku-postgresql"
+  }
+    
+ ],
+"dicription" : " python based telegram bot with exrta features and well maintaind by team UNITED",
+ "env": {
     "ALLOW_EXCL": {
-      "description": "No need change",
-      "value": "True"
-    },
-    "STRICT_GBAN": {
-      "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned",
-      "value": "True",
-      "required": false
-    }
-  },
-
-  "name": "Elizabeth_TgBot",
-  "description": "A Powerful Telegram Bot written in PTB and Telethon",
-  "logo": "https://telegra.ph/file/bd72857322159140bec6b.jpg",
-  "keywords": ["telegram-bot"],
-  "repository": "https://github.com/p-rinc-e/elizabeth.git",
+      "discription": "Set this to True if you want ! to be a command prefix along with /",
+  "value": "true"
+}, 
+"BAN_STKR": {
+   "discription": "drop sticker id here. sticker will be shown after banning users",
+    "value": ""
 },
-"buildpacks": [
+"ENV": {
+         "description": "Setting this to ANYTHING will enable environment variables.",
+         "value": "ANYTHING"
+},
+"KICK_STICKER": {
+         "description": "ID of the sticker you want to use when kicking people.",
+         "required": false,
+         "value": ""
+},
+   "OWNER_ID": {
+         "description": "Your user ID as an integer.",
+         "value": "1471234074"
+   },
+    "OWNER_NAME": {
+         "description": "Your Name",
+         "value": "zyruz"
+      },
+    "DEV_USERS": {
+         "description": "ID of users who are Dev (can use /py etc.)",
+         "required": false,
+         "value": "1471234074"
+      },
+     "CASH_API_KEY": {
+         "description": "Required for currency converter",
+         "required": false,
+         "value": "-xyz"
+      },
+    "TIME_API_KEY": {
+         "description": "Required for timezone information",
+         "value": "-xyz"
+      },
+       "LASTFM_API_KEY": {
+         "description": "Required for lastfm plugin",
+         "value": "-xyz"
+      },
+     "START_IMG": {
+         "description": "Image shows when hit /start",
+         "value": "https://telegra.ph/file/e3685fe4b49df44a374a8.jpg"    
+      },
+      "API_OPENWEATHER": {
+         "description": "Required for weather information",
+         "value": "-xyz"
+      },
+      "PORT": {
+         "description": "Port to use for your webhooks.",
+         "required": false,
+         "value": ""
+      },
+      "STRICT_GBAN": {
+         "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
+         "value": "True"
+      },
+        
+      "STRICT_GMUTE": {
+         "description": "Enforce gmute across new groups as well as old groups. When a gmutes user talks, he will be muted",
+         "value": "True"
+      },
+      "SUDO_USERS": {
+         "description": "A space separated list of user IDs who you want to assign as sudo users.",
+         "required": false,
+         "value": "1471234074"
+      },
+      "SUPPORT_USERS": {
+         "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
+         "required": false,
+         "value": "1471234074"
+      },
+     
+      "TOKEN": {
+         "description": "Your bot token.",
+         "required": true,
+         "value": ""
+      },
+      "URL": {
+         "description": "The Heroku App URL :-  https://<appname>.herokuapp.com/",
+         "required": false,
+         "value": ""
+      },
+      "WEBHOOK": {
+         "description": "Setting this to ANYTHING will enable webhooks.",
+         "required": false,
+         "value": ""
+      },
+      "WHITELIST_USERS": {
+         "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
+         "required": false,
+         "value": "1471234074"
+      },
+      "WALL_API":{
+         "description": "Enter wall api",
+         "required": false,
+         "value": ""
+      },
+      "LYDIA_API": {
+         "description": "Put here lydia API.",
+         "required": false,
+         "value": " " 
+      }
+   },
+     "keywords": [
+      "telegram",
+      "weeb",
+      "group",
+      "manager",
+      "aleenabot"
+      
+   ],
+   "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-python"
     },
@@ -165,4 +133,8 @@
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     }
   ],
-},
+   "name": "Aleena",
+   "repository": "https://github.com/SZyruz-ramu/Aleena",
+   "success_url": "https://telegram.dog/aleena",
+   "logo": "https://telegra.ph/file/e3685fe4b49df44a374a8.jpg"
+}
