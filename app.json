@@ -5,6 +5,7 @@
   "keywords": ["telegram-bot"],
   "repository": "https://github.com/p-rinc-e/elizabeth.git",
 },
+
   "env": {
     "TL_APP_ID": {
       "description": "Get this value from my.telegram.org! Please do not steal",
